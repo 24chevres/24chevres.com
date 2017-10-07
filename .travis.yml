@@ -1,0 +1,15 @@
+language: node_js
+
+script:
+  - echo "meeh meeh"
+
+deploy:
+  on:
+    branch: master
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: $AWS_S3_BUCKET_NAME
+  skip_cleanup: true
+  local_dir: . # replace with ./dist
+  # cache_control: "max-age=21600"
