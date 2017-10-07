@@ -1,5 +1,8 @@
 language: node_js
 
+script:
+  - echo "meeh meeh"
+
 deploy:
   on:
     branch: master
