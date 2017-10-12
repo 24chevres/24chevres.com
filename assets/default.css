@@ -1,0 +1,60 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url(images/24chevres.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-position: center center;
+  }
+}
+
+/**
+ * Avoid image to have weird behaviour
+ */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/**
+ * Specific background for 404 page
+ */
+body.error-404 {
+  background-image: url(images/24chevres_errors.jpg);
+}
+
+/**
+ * Standard container
+ */
+.container {
+  width: 50vh;
+  margin: auto;
+  padding:1em;
+  background: transparent;
+}
+
+/**
+ * Put content on footer
+ */
+.on-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+p.centered {
+  text-align: center;
+}
+
+p.upper {
+  text-transform: uppercase;
+}
+
+p.upper > span {
+  font-weight: bold;
+}
