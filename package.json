@@ -1,0 +1,24 @@
+{
+  "name": "24chevres.com",
+  "version": "1.0.0",
+  "description": "Website of 24chevres.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deuzu/24chevres.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deuzu/24chevres.com/issues"
+  },
+  "homepage": "https://github.com/deuzu/24chevres.com#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
