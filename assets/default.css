@@ -69,3 +69,15 @@ header.header > .logo > img {
   width: 48px;
   height: auto;
 }
+
+header.header > .donate > img {
+  width:10%; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  border: 0;
+}
+
+header.header > .donate > img:hover {
+  width:100%; 
+}
