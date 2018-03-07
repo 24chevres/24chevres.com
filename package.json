@@ -17,7 +17,9 @@
     "url": "https://github.com/deuzu/24chevres.com/issues"
   },
   "homepage": "https://github.com/deuzu/24chevres.com#readme",
-  "dependencies": {},
+  "dependencies": {
+    "konami": "^1.6.0"
+  },
   "devDependencies": {
     "live-server": "^1.2.0"
   }

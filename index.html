@@ -64,5 +64,13 @@
         </p>
       </div>
     </div>
+    <script src="node_modules/konami/konami.js"></script>
+    <script>
+      function play_goat(){
+        var audio = new Audio('assets/audio/screaming_goat.mp3');
+        audio.play();
+      }
+    var easter_egg = new Konami(function() { play_goat()});
+  </script>
   </body>
 </html>
