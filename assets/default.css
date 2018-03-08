@@ -66,18 +66,26 @@ header.header > .logo {
 }
 
 header.header > .logo > img {
-  width: 48px;
+  width: 150px;
   height: auto;
 }
 
+header.header > .logo > img path {
+  fill: #FFF !important;
+}
+
 header.header > .donate > img {
-  width:10%; 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
+  width:10%;
+  position: absolute;
+  top: 0;
+  right: 0;
   border: 0;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 header.header > .donate > img:hover {
-  width:100%; 
+  width:20%;
 }
