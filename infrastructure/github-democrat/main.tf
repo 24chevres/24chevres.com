@@ -39,6 +39,7 @@ resource "aws_lambda_function" "github_democrat" {
   handler          = "index.handler"
   source_code_hash = "${base64sha256(file("github-democrat-aws-lambda.zip"))}"
   runtime          = "nodejs6.10"
+  timeout          = "30"
 
   environment = {
     variables = {
