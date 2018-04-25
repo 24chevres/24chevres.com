@@ -1,8 +1,7 @@
 ## The pull request
 
 - [ ] is for greater goods
-- [ ] helps achieve [goals and objectives](../README#goals-and-objectives.md)
-- [ ] is following the [contributing guide lines](./CONTRIBUTING.md)
+- [ ] is following the [contributing guide lines](/24chevres/24chevres.com/blob/master/CONTRIBUTING.md)
 - [ ] has its description filled
 
 ## Purpose
