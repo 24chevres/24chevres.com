@@ -21,11 +21,14 @@ Every idea is welcomed and every one can contribute.
 
 ## Tech stack
 
-### Programming languages
+### Programming languages & Frameworks
 
 - [JavaScript](https://www.javascript.com/): Make dynamic webpages and various scripts
   - [NodeJS](https://nodejs.org): A JavaScript runtime built on Chrome's V8 JavaScript engine
   - [NPM](https://www.npmjs.com/): Install and manage Javascript dependencies on the project
+  - [Webpack](https://webpack.js.org/): A static module bundler for modern JavaScript applications
+  - [React](https://reactjs.org/): A JavaScript library for building user interfaces
+  - [Material-UI](https://material-ui-next.com/): React components that implement Google's Material Design
 - [Terraform](https://www.terraform.io/): Define infrastructure as code
 
 ### Server services

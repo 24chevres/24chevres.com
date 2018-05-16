@@ -1,4 +1,14 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const RobotstxtPlugin = require('robotstxt-webpack-plugin').default;
+
+const robotstxtPlugin = new RobotstxtPlugin({
+  policy: [
+    {
+      userAgent: "*",
+      disallow: "/",
+    }
+  ],
+});
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: './src/assets/index.html',
@@ -47,6 +57,7 @@ module.exports = {
     ],
   },
   plugins: [
-    htmlPlugin
+    htmlPlugin,
+    robotstxtPlugin,
   ],
 };

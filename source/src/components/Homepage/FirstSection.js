@@ -8,7 +8,6 @@ import Button from 'material-ui/Button';
 import SchoolIcon from '@material-ui/icons/School';
 import TagFacesIcon from '@material-ui/icons/TagFaces';
 import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ShareIcon from '@material-ui/icons/Share';
 
 const styles = theme => ({
@@ -22,42 +21,20 @@ const styles = theme => ({
   },
   subIntro: {
     textAlign: 'center',
-    margin: '0 auto',
   },
   important: {
     marginTop: '1.5em',
     marginBottom: '1em',
   },
   icon: {
-    color: theme.palette.primary.contrastText,
     borderRadius: '20px',
     minWidth: '0',
     width: '40px',
   },
-  wbIcon: {
-    backgroundColor: theme.palette.error.main,
-    '&:hover': {
-      backgroundColor: theme.palette.error.dark,
-    },
-  },
-  shareIcon: {
-    backgroundColor: theme.palette.tertiary.main,
-    '&:hover': {
-      backgroundColor: theme.palette.tertiary.dark,
-    },
-  },
-  footer: {
-    position: 'absolute',
-    bottom: '0.3em',
-    left: 0,
-    right: 0,
-    marginLeft: 'auto',
-    marginRight: 'auto',
-  },
 });
 
 const FirstSection = ({ classes }) => (
-  <div className={classes.root}>
+  <div>
     <Typography variant="display1" gutterBottom className={classes.intro}>
       A community for greater good.
     </Typography>
@@ -66,16 +43,12 @@ const FirstSection = ({ classes }) => (
       We encourage and help people to create awesome open-source projects!
     </Typography>
 
-    <Grid container className={classes.important}>
-      <Grid item xs={12}>
-        <Typography variant="subheading" align="center">
-          What's important for us
-        </Typography>
-      </Grid>
-    </Grid>
+    <Typography variant="subheading" align="center" className={classes.important}>
+      What's important for us
+    </Typography>
 
-    <Grid container>
-      <Grid item xs>
+    <Grid container justify="center">
+      <Grid item xs lg={1}>
         <Grid container direction="column" justify="center" alignItems="center">
           <Grid item xs>
             <Button className={classes.icon} variant="raised" color="secondary">
@@ -90,7 +63,7 @@ const FirstSection = ({ classes }) => (
         </Grid>
       </Grid>
 
-      <Grid item xs>
+      <Grid item xs lg={1}>
         <Grid container direction="column" justify="center" alignItems="center">
           <Grid item xs>
             <Button className={classes.icon} variant="raised" color="primary">
@@ -105,10 +78,10 @@ const FirstSection = ({ classes }) => (
         </Grid>
       </Grid>
 
-      <Grid item xs>
+      <Grid item xs lg={1}>
         <Grid container direction="column" justify="center" alignItems="center">
           <Grid item xs>
-            <Button className={classNames(classes.icon, classes.wbIcon)} variant="raised">
+            <Button className={classes.icon} variant="raised" color="primary">
               <SchoolIcon />
             </Button>
           </Grid>
@@ -120,10 +93,10 @@ const FirstSection = ({ classes }) => (
         </Grid>
       </Grid>
 
-      <Grid item xs>
+      <Grid item xs lg={1}>
         <Grid container direction="column" justify="center" alignItems="center">
           <Grid item xs>
-            <Button className={classNames(classes.icon, classes.shareIcon)} variant="raised">
+            <Button className={classes.icon} variant="raised" color="secondary">
               <WbIncandescentIcon />
             </Button>
           </Grid>
@@ -133,15 +106,6 @@ const FirstSection = ({ classes }) => (
             </Typography>
           </Grid>
         </Grid>
-      </Grid>
-    </Grid>
-
-    <Grid container className={classes.footer} direction="column" justify="center" alignItems="center">
-      <Grid item xs>
-        <Button className={classes.moreInfo} color="secondary">More information</Button>
-        </Grid>
-      <Grid item xs>
-        <ExpandMoreIcon />
       </Grid>
     </Grid>
   </div>

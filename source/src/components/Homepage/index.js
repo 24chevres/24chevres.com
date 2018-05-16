@@ -6,7 +6,7 @@ import FirstSection from './FirstSection';
 import background from '../../assets/images/goat-2216868_640.jpg';
 
 const styles = {
-  scollSection: {
+  scrollSection: {
     marginTop: '70px',
     padding: '5px',
   },
@@ -27,17 +27,9 @@ const Homepage = ({ classes }) => (
     <ScrollContainer>
       <ScrollSection pageId={0}>
         <div className={classes.background}></div>
-        <div className={classes.scollSection}>
+        <div className={classes.scrollSection}>
           <FirstSection />
         </div>
-      </ScrollSection>
-
-      <ScrollSection style={{ backgroundColor: 'pink' }} pageId={1}>
-        <div className={classes.scollSection}></div>
-      </ScrollSection>
-
-      <ScrollSection style={{ backgroundColor: 'yellow' }} pageId={2}>
-        <div className={classes.scollSection}></div>
       </ScrollSection>
     </ScrollContainer>
   </div>

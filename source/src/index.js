@@ -8,10 +8,9 @@ import AppBar from './components/AppBar';
 
 const theme = createMuiTheme({
   palette: {
-    primary: { main: '#98ffb0', contrastText: '#4c4c4c' },
-    secondary: { main: '#9aceff' },
-    tertiary: { main: '#bfff98', dark: '#98cc79' },
-    error: { main: '#ffa79a', dark: '#cc857b' },
+    primary: { main: '#69BAC1', contrastText: '#3C3C3C' },
+    secondary: { main: '#74D78E', contrastText: '#4C4C4C'},
+    error: { main: '#FFC189', dark: '#cc857b' },
   },
   overrides: {
     MuiTypography: {
@@ -31,6 +30,3 @@ const Index = () => (
 );
 
 ReactDOM.render(<Index />, document.getElementById('app'));
-
-// TODO share in PR
-// https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75
