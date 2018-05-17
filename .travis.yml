@@ -1,7 +1,17 @@
 language: node_js
 
-script:
+node_js: node
+
+before_install:
   - echo "meeh meeh"
+  - cd source
+
+before_script:
+  - npm run build
+
+cache:
+  directories:
+    - source/node_modules
 
 deploy:
   on:
@@ -12,5 +22,5 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $AWS_S3_BUCKET_NAME
   skip_cleanup: true
-  local_dir: source
-  # cache_control: "max-age=21600"
+  local_dir: source/dist
+  cache_control: "max-age=3600"
