@@ -22,5 +22,5 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $AWS_S3_BUCKET_NAME
   skip_cleanup: true
-  local_dir: source/dist
+  local_dir: dist
   cache_control: "max-age=3600"
